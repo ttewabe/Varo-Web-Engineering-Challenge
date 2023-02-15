@@ -1,0 +1,48 @@
+.movie-overview {
+  flex: 1;
+}
+
+.movie-overview:hover {
+  cursor: pointer;
+}
+
+.movie-overview .movie-overview-poster {
+  width: 100%;
+  max-height: 450px;
+  border-radius: 1rem 1rem 0 0;
+  object-fit: fill;
+}
+
+.movie-overview-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 1rem;
+}
+
+.movie-overview-content .movie-overview-content-title-rating * {
+  padding: 0.5rem 0;
+}
+
+@media (max-width: 600px) {
+  .movie-overview {
+    display: flex;
+    gap: 1rem;
+    height: 100px;
+  }
+
+  .movie-overview .movie-overview-poster {
+    width: 30%;
+    height: 100%;
+    border-radius: 0;
+    object-fit: fill;
+  }
+
+  .movie-overview-content {
+    width: 70%;
+  }
+
+  .movie-overview-content h3 {
+    font-size: 1rem;
+  }
+}

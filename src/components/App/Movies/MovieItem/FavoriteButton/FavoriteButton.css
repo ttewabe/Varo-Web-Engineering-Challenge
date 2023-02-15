@@ -1,0 +1,4 @@
+.movie-favorite-button svg:hover {
+  cursor: pointer;
+  fill: pink;
+}

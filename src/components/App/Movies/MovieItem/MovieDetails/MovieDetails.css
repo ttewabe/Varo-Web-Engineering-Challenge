@@ -1,0 +1,33 @@
+.movie-details:hover {
+  cursor: pointer;
+}
+
+.movie-details-header {
+  display: flex;
+  gap: 1rem;
+}
+
+.movie-details-header img {
+  max-height: 150px;
+  object-fit: fill;
+}
+
+.movie-details-header-text {
+  width: 60%;
+}
+
+.movie-details-content .movie-details-description,
+.movie-details-content .movie-details-cast {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  .movie-details {
+    padding: 0rem;
+  }
+
+  .movie-details-content {
+    padding: 0 0.5rem;
+  }
+}

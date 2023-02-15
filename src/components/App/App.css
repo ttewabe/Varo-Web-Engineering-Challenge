@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Urbanist", sans-serif;
+}
+
+.App {
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+}
+
+.Main {
+  background-color: white;
+  color: #282c34;
+  padding: 10px;
+
+  min-height: calc(90vh - 40px);
+  width: calc(100% - 20px);
+}

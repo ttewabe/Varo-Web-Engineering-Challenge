@@ -1,0 +1,4 @@
+-- based on the documentation of imdb i specified the image baseUrl and available poster and backdrop sizes
+-- added roboto from google font using index.html method
+- Generate session id using the imdb guest session endpoint and store it in local storage
+-- install react redux toolkit

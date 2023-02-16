@@ -1,16 +1,17 @@
-import React from 'react';
+import React from "react";
 
-import close from '../../../assets/close.svg';
-import logo from '../../../assets/logo.svg';
-import menu from '../../../assets/menu.svg';
-import NavMenu from './NavMenu/NavMenu';
-import useIsMobile from '../../hooks/useScreenSize';
+import close from "../../../assets/close.svg";
+import logo from "../../../assets/logo.svg";
+import menu from "../../../assets/menu.svg";
+import NavMenu from "./NavMenu/NavMenu";
+import useIsMobile from "../../hooks/useScreenSize";
 
-import './Header.css';
+import "./Header.css";
 
 const Header = () => {
   const [navMenuOpen, setNavMenuOpen] = React.useState(false);
   const { isMobile } = useIsMobile();
+
   return (
     <React.Fragment>
       <header className="App-header">

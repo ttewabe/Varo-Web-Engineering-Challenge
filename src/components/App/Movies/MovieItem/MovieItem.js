@@ -18,6 +18,7 @@ const MovieItem = ({ movie }) => {
       onClick={toggleMovieDetails}
     >
       <MovieOverView
+        id={movie.id}
         title={movie.title}
         poster={movie.poster_path}
         rating={movie.vote_average}

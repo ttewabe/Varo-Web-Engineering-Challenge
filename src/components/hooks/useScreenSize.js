@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
 const useScreenSize = () => {
   const getScreenSize = () => ({
-    isMobile: window.screen?.width < 600,
-    width: window.screen?.width,
-    height: window.screen?.height,
+    isMobile: window.innerWidth < 600,
+    width: window.innerWidth,
+    height: window.innerHeight,
   });
   const [screenSize, setScreenSize] = React.useState(getScreenSize());
   const handleResize = () => {
@@ -12,8 +12,8 @@ const useScreenSize = () => {
   };
 
   React.useEffect(() => {
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   });
 
   return screenSize;

@@ -64,3 +64,4 @@ Then run npm start to start the application
 2) added roboto from google font using index.html method
 3) Generate session id using the imdb guest session endpoint and store it in local storage
 4) install react redux toolkit
+5) install qs to parse query string of url

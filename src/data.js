@@ -1,6 +1,7 @@
 const data = {
   apiKey: "b8359a48e865c6dff15dbc8a38c60bd1",
   imdbHostUrl: "https://api.themoviedb.org/",
+  authenticationUrl: "https://www.themoviedb.org/authenticate/",
   imageBaseUrl: "https://image.tmdb.org/t/p/",
   backdrop_sizes: {
     w300: "w300",

@@ -18,6 +18,8 @@
     position: fixed;
     top: 10vh;
     right: 10px;
+    z-index: 10;
+    
   }
 
   .NavList {

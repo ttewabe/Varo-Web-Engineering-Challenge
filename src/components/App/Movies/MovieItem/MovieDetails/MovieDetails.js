@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./MovieDetails.css";
-import generateImageUrl from "../../../../../utils/generateImageUrl";
+import generateImageUrl from "../../../../../utils/generate-image-url";
 import data from "../../../../../data";
 
 const MovieDetails = ({ movie }) => {

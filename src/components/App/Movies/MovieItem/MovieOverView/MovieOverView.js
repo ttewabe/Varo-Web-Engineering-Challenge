@@ -1,11 +1,14 @@
 import React from "react";
 
 import "./MovieOverView.css";
-import generateImageUrl from "../../../../../utils/generateImageUrl";
+import generateImageUrl from "../../../../../utils/generate-image-url";
 import data from "../../../../../data";
 import FavoriteButton from "../FavoriteButton/FavoriteButton";
+import { useLocation } from "react-router-dom";
 
-const MovieOverView = ({ title, rating, poster }) => {
+const MovieOverView = ({ id, title, rating, poster }) => {
+  const location = useLocation();
+
   return (
     <div className="movie-overview">
       <img
@@ -18,7 +21,10 @@ const MovieOverView = ({ title, rating, poster }) => {
           <h3>{title}</h3>
           <p>{rating}</p>
         </div>
-        <FavoriteButton />
+        <FavoriteButton
+          id={id}
+          isFavorite={location.pathname === "/favorite-movies"}
+        />
       </div>
     </div>
   );
